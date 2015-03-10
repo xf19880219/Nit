@@ -27,7 +27,7 @@ namespace Nit.Extensions
         /// <param name="val">objectData</param>
         /// <param name="defaultVal">defaultVal</param>
         /// <returns>int</returns>
-        public static int ToInt(this string val, int defaultVal)
+        public static int TryToInt(this string val, int defaultVal)
         {
             int result = defaultVal;
             int.TryParse(val, out result);
@@ -48,7 +48,7 @@ namespace Nit.Extensions
         /// <param name="val">objectData</param>
         /// <param name="defaultVal">defaultVal</param>
         /// <returns>double</returns>
-        public static double ToDouble(this string val, double defaultVal)
+        public static double TryToDouble(this string val, double defaultVal)
         {
             double result = defaultVal;
             double.TryParse(val, out result);
@@ -69,7 +69,7 @@ namespace Nit.Extensions
         /// <param name="val">val</param>
         /// <param name="defaultVal">defaultVal</param>
         /// <returns></returns>
-        public static float ToFloat(this string val, float defaultVal)
+        public static float TryToFloat(this string val, float defaultVal)
         {
             float result = defaultVal;
             float.TryParse(val, out result);
@@ -128,7 +128,7 @@ namespace Nit.Extensions
         /// <param name="val">objectData</param>
         /// <param name="preval">preval</param>
         /// <returns>bool</returns>
-        public static bool ToBool(this string val, bool preval)
+        public static bool TryToBool(this string val, bool preval)
         {
             bool result = preval;
             bool.TryParse(val, out result);
